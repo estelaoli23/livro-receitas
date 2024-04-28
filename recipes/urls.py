@@ -1,9 +1,9 @@
-from django.urls import path
+from django.urls import path  # type: ignore
 
-from recipes.views import contato, home, sobre
+from . import views
 
 urlpatterns = [
-    path('', home),  # Home
-    path('sobre/', sobre),  # /sobre/
-    path('contato/', contato),  # /contato/
+    path('', views.home),
+    path('recipes/<int:id>/', views.recipe)
+
 ]
