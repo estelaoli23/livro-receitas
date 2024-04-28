@@ -17,3 +17,8 @@ No powershell:
 Após tudo isso, rodar o requirements 
 
 ``` pip install -r requirements.txt ```
+
+E rodar a aplicação
+
+
+``` python manage.py runserver ```
